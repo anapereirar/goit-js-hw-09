@@ -5,7 +5,6 @@ const stopButton = document.querySelector('[data-stop]');
 // Inicializar Intervalo
 let intervalId = null;
 
-
 // Función para crear color random
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
@@ -18,6 +17,7 @@ function changeBodyBackgroundColor() {
   document.body.style.backgroundColor = getRandomHexColor();
 }
 
+//Agregar eventos a los botones
 startButton.addEventListener('click', ()=>{
     startButton.disabled = true;
     intervalId = setInterval(changeBodyBackgroundColor, 1000);
