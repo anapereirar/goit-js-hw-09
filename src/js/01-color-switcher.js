@@ -13,7 +13,6 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 };
 
-
 // Función para cambiar color del fondo
 function changeBodyBackgroundColor() {
   document.body.style.backgroundColor = getRandomHexColor();
